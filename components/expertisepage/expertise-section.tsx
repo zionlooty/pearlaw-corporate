@@ -22,23 +22,14 @@ const ExpertiseSection = () => {
                     <p className="text-[#2b2b2b] text-[18px]">End-to-end corporate structuring, M&A <br />
                         transactions, commercial contracts and joint <br />
                         ventures tailored to your business objectives.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
                 </div>
-
 
                 <div className="col-span-1 flex flex-col gap-6 text-center items-center justify-center">
                     <Scale className="w-[48px] h-[48px] text-[#C84E26]" />
                     <h1 className="text-[18px] font-semibold text-[#2b2b2b] uppercase">Tech Law</h1>
                     <p className="text-[#2b2b2b] text-[18px]">Navigate the digital landscape with expertise <br /> in data privacy, IP protection, software <br /> licensing, and technology transactions.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
                 </div>
 
 
@@ -47,11 +38,7 @@ const ExpertiseSection = () => {
                     <House className="w-[48px] h-[48px] text-[#C84E26]" />
                     <h1 className="text-[18px] font-semibold text-[#2b2b2b] uppercase">Real Estate Law</h1>
                     <p className="text-[#2b2b2b] text-[18px]">Complete real estate solutions covering <br /> property transactions, due diligence, <br /> leasing, and title verification.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
 
                 </div>
 
@@ -61,11 +48,7 @@ const ExpertiseSection = () => {
                     <Rocket className="w-[48px] h-[48px] text-[#C84E26]" />
                     <h1 className="text-[18px] font-semibold text-[#2b2b2b] uppercase">STARTUPS & MSME LAW</h1>
                     <p className="text-[#2b2b2b] text-[18px]">Comprehensive legal support for startups <br /> and MSME’s including incorporation, funding <br /> rounds, term sheets, and growth strategies.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
 
                 </div>
 
@@ -76,11 +59,7 @@ const ExpertiseSection = () => {
 
                     <h1 className="text-[18px] font-semibold text-[#2b2b2b] uppercase">Company Governance</h1>
                     <p className="text-[#2b2b2b] text-[18px]">Ensure compliance with corporate <br /> governance standards, board processes,<br /> statutory fillings and regulatory.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
 
                 </div>
 
@@ -90,11 +69,7 @@ const ExpertiseSection = () => {
 
                     <h1 className="text-[18px] font-semibold text-[#2b2b2b] uppercase">REGULATORY COMPLIANCE</h1>
                     <p className="text-[#2b2b2b] text-[18px]">Stay ahead of regulatory changes with our <br /> proactive compliance advisory across <br /> multiple sectors and jurisdictions.</p>
-                    <div className="flex items-center justify-center text-[#C84E26] gap-2 text-[14px] uppercase">
-                        <Link href="/">learn more</Link >
-                        <ArrowRight size={9.04} />
 
-                    </div>
 
                 </div>
 

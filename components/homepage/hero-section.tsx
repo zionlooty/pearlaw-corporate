@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 const HeroSection = () => {
     return (
-        <div className='min-h-screen bg-center bg-cover relative flex justify-center items-center' style={{ backgroundImage: "url(/hero.jpg)" }}>
+        <div className='min-h-screen bg-center bg-cover relative flex justify-center items-center' style={{ backgroundImage: "url(assets/hero.jpg)" }}>
             <div className="absolute top-0 left-0 w-full h-full bg-[#0000005d]"></div>
             <div className="flex flex-col justify-center items-center text-center z-40 gap-7">
                 <h1 className="uppercase text-[36px] text-white">Welcome to</h1>

@@ -12,13 +12,13 @@ const Navbar = () => {
         },
         {
             id: 2,
-            name: "pages",
-            link: "/pages"
+            name: "experience",
+            link: "/experience"
         },
         {
             id: 3,
-            name: "services",
-            link: "/services"
+            name: "expertise",
+            link: "/expertise"
         },
         {
             id: 4,
@@ -27,11 +27,16 @@ const Navbar = () => {
         },
         {
             id: 5,
+            name: "team",
+            link: "/team"
+        },
+        {
+            id: 6,
             name: "about",
             link: "/about"
         },
         {
-            id: 5,
+            id: 7,
             name: "contact",
             link: "/contact"
         },
