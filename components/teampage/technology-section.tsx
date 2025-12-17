@@ -26,7 +26,7 @@ const TechnologySection = () => {
 
 
                     <div className="flex flex-col items-center w-[293px] h-[189px] p-4">
-                        <Scale className="w-[48px] h-[48px] text-[#C84E26] mb-4" />
+                        <Scale className="w-[40px] h-[34px] text-[#C84E26] mb-4" />
                         <h2 className="text-[18px] text-[#FEFEFE] font-semibold uppercase text-center mb-3">
                             Professionalism
                         </h2>
@@ -39,9 +39,7 @@ const TechnologySection = () => {
                     <div className="flex flex-col items-center w-[293px] h-[189px] p-4">
                         <Icon
                             icon="hugeicons:idea-01"
-                            width={48}
-                            height={48}
-                            className="text-[#C84E26] mb-4"
+                            className="text-[#C84E26] w-[40px] h-[34px] mb-4"
                         />
                         <h2 className="text-[18px] text-[#FEFEFE] font-semibold uppercase text-center mb-3">
                             Integrity
@@ -55,9 +53,7 @@ const TechnologySection = () => {
                     <div className="flex flex-col items-center w-[293px] h-[189px] p-4">
                         <Icon
                             icon="hugeicons:idea-01"
-                            width={48}
-                            height={48}
-                            className="text-[#C84E26] mb-4"
+                            className="text-[#C84E26]  w-[40px] h-[34px] mb-4"
                         />
                         <h2 className="text-[18px] text-[#FEFEFE] font-semibold uppercase text-center mb-3">
                             Innovation
@@ -69,7 +65,11 @@ const TechnologySection = () => {
 
 
                     <div className="flex flex-col items-center w-[293px] h-[189px] p-4">
-                        <UsersRound style={{ fontSize: 48, color: '#C84E26' }} className="mb-4" />
+                        <Icon
+                            icon="ri:group-line"
+                            className="text-[#C84E26] w-[40px] h-[34px] mb-2"
+                        />
+
                         <h2 className="text-[18px] text-[#FEFEFE] font-semibold uppercase text-center mb-3">
                             Technology Innovation
                         </h2>
