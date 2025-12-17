@@ -89,7 +89,7 @@ const FooterSection = () => {
           </h1>
 
           <ul className="flex flex-col space-y-4 text-[16px] text-[#FEFEFE]">
-            <Link href="/" >
+            <Link href="/about" >
               About Us
             </Link>
             <Link href="/retainership" >
