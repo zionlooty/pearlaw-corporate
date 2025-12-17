@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import { Eye } from 'lucide-react';
 import React from 'react';
 
@@ -9,7 +10,13 @@ const MissionSection = () => {
         <div className="w-[628px] h-[450px] flex flex-col items-center justify-center shadow-2xl py-[60px] px-[80px] rounded-lg">
 
           <div className="flex gap-6 mb-6">
-            <Eye size={48} className="text-[#C84E26]" />
+            <Icon
+              icon="icon-park-outline:round-caliper"
+              width={48}
+              height={48}
+              className="text-[#C84E26] mb-4"
+            />
+
 
           </div>
 
@@ -25,7 +32,7 @@ const MissionSection = () => {
         <div className="w-[628px] h-[450px] flex flex-col items-center justify-center shadow-2xl py-[60px] px-[80px] rounded-lg">
 
           <div className="flex gap-6 mb-6">
-            <Eye size={48} className="text-[#C84E26]" />
+            <Eye  className="text-[#C84E26] w-[48px] h-[48px]" />
 
           </div>
 
