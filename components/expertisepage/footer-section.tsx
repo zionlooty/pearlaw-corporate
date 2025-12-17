@@ -7,7 +7,7 @@ import { IoCallOutline, IoLogoTiktok } from "react-icons/io5";
 
 const FooterSection = () => {
   return (
-    <footer className="w-full overflow-x-hidden bg-gradient-to-l from-[#131927] to-[#1E223F] ">
+    <footer className="w-full overflow-x-hidden bg-gradient-to-l from-[#131927] to-[#1E223F] mt-[120px]">
 
       
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-4 gap-16">
@@ -48,12 +48,12 @@ const FooterSection = () => {
             Contact Info
           </h1>
 
-          <div className="flex items-center gap-2 mb-3 text-white">
+          <div className="flex items-center gap-2 mb-2 text-white">
             <FaWhatsapp className="text-[#C84E26]" />
             <span className="text-[16px]">+234 806 430 5645</span>
           </div>
 
-          <div className="flex items-center gap-2 mbmb-3 text-white">
+          <div className="flex items-center gap-2 mb-2 text-white">
             <IoCallOutline className="text-[#C84E26]" />
             <span className="text-[16px]">+234 813 614 1666</span>
           </div>
@@ -92,13 +92,13 @@ const FooterSection = () => {
             <Link href="/" >
               About Us
             </Link>
-            <Link href="/" >
+            <Link href="/retainership" >
               Retainership
             </Link>
             <Link href="/careers" >
               Careers
             </Link>
-            <Link href="/" >
+            <Link href="/blog" >
               Blog
             </Link>
             <Link href="/" >

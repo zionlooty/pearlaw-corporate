@@ -48,12 +48,12 @@ const FooterSection = () => {
             Contact Info
           </h1>
 
-          <div className="flex items-center gap-2 mb-3 text-white">
+          <div className="flex items-center gap-2 mb-2 text-white">
             <FaWhatsapp className="text-[#C84E26]" />
             <span className="text-[16px]">+234 806 430 5645</span>
           </div>
 
-          <div className="flex items-center gap-2 mbmb-3 text-white">
+          <div className="flex items-center gap-2 mb-2 text-white">
             <IoCallOutline className="text-[#C84E26]" />
             <span className="text-[16px]">+234 813 614 1666</span>
           </div>
@@ -92,13 +92,13 @@ const FooterSection = () => {
             <Link href="/" >
               About Us
             </Link>
-            <Link href="/" >
+            <Link href="/retainership" >
               Retainership
             </Link>
-            <Link href="/" >
+            <Link href="/careers" >
               Careers
             </Link>
-            <Link href="/" >
+            <Link href="/blog" >
               Blog
             </Link>
             <Link href="/" >
