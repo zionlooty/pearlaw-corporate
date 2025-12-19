@@ -1,0 +1,220 @@
+import { Icon } from '@iconify/react';
+import Image from 'next/image';
+import React from 'react';
+
+const ArticlesSection = () => {
+    const blog = [
+        {
+            image: "/about.jpg",
+            title: "How is Mediation Useful in Family Law Cases?",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+        {
+            image: "/blog2.jpg",
+            title: "How is Mediation Useful in Family Law Cases?",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+        {
+            image: "/blog1.jpg",
+            title: "Navigating Cruise Ship Contractual Claim Restrictions",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+        {
+            image: "/blog3.jpg",
+            title: "A Legal Guide to Child Support and Parental Responsibilities",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+        {
+            image: "/blog5.jpg",
+            title: "The Role of Attorneys in Domestic Abuse Cases",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+        {
+            image: "/blog6.jpg",
+            title: "The Role of Family Courts in child Protection and Welfare",
+            description:
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+            date: "Feb 26, 2025",
+            author: "Adam Ekongo",
+            comments: "4 Comments",
+        },
+    ];
+
+    const recentArticles = [
+        {
+            image: "/blog1.jpg",
+            title1: "Navigating Cruise Ship Contractual",
+            title2: "Claim Restrictions",
+            date: "Feb 26, 2025",
+            author: "Adam Ekong",
+        },
+        {
+            image: "/blog2.jpg",
+            title1: "Understand Your Legal Right In",
+            title2: "Domestic Violence Cases",
+            date: "Feb 26, 2025",
+            author: "Adam",
+        },
+        {
+            image: "/blog3.jpg",
+            title1: "A Legal Guide to Child Support and",
+            title2: "Parental Responsibilities",
+            date: "Feb 26, 2025",
+            author: "Tony Patra",
+        },
+    ];
+
+    const tags = [
+        "ANTITRUST",
+        "BANKRUPTCY",
+        "EMPLOYEMENT",
+        "FAMILY",
+        "GENERAL PRACTICE",
+        "IMMIGRATION",
+        "LAW",
+        "NONPROFIT",
+        "PERSONAL INJURY",
+        "PROPERTY",
+    ];
+
+    const practiceAreas = [
+        "Corporate & Commercial",
+        "Startups & MSME Law",
+        "Tech Law",
+        "Real Estate Law",
+        "Regulatory Compliance",
+        "Company Governance",
+    ];
+
+
+    return (
+        <section className="w-[1282px] mx-auto flex items-center justify-center mt-[80px] p-10">
+            <div className="grid grid-cols-[629px_auto] gap-[58px] w-full">
+
+                <div className="flex flex-col gap-10">
+                    {blog.map((item, index) => (
+                        <div
+                            key={index}
+                            className="relative w-[629px] flex flex-col items-center h-[907px] bg-white shadow-lg overflow-hidden"
+                        >
+                            <div className="relative w-full h-[514px] overflow-hidden mb-7">
+                                <Image src={item.image} alt="Blog image" fill className="object-cover" />
+
+                                {item.image === "/about.jpg" && (
+                                    <div className="absolute bottom-0 left-0 flex justify-center items-center gap-2 bg-[#F1F2F6] w-[217px] h-[76px]">
+                                        <Icon icon="mdi:flash" className="text-[#C84E26] w-[20px] h-[20px]" />
+                                        <span className="text-[#C84E26] text-[16px] font-semibold">STICKY POST</span>
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="flex flex-col px-6 pt-6 w-full">
+                                <h1 className="text-[24px] font-semibold text-[#2B2B2B] mb-4 leading-snug">
+                                    {item.title}
+                                </h1>
+                                <h5 className="text-[14px] text-[#2B2B2B]/70 mb-3">{item.description}</h5>
+
+                                <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-20">
+                                    <span>{item.date}</span>
+                                    <span className='w-[8px] h-[18px] text-[#2B2B2B] text-[14px]'>.</span>
+                                    <span>{item.author}</span>
+                                    <span className='w-[8px] h-[18px] text-[#2B2B2B] text-[14px]'>.</span>
+                                    <span>{item.comments}</span>
+                                </div>
+
+                                <div className="w-full flex justify-start">
+                                    <button className="w-[113px] h-[46px] bg-[#C84E26] px-[18px] py-[16px] rounded-[4px] text-[14px] text-[#F1F2F6]">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
+                <div className="flex flex-col justify-start w-[631px]">
+                    <div className="w-[32px] border-b-3 border-[#C84E26] mb-4" />
+                    <h1 className="text-[18px] font-bold text-[#2B2B2B] uppercase mb-4">Recent Articles</h1>
+
+                    {recentArticles.map((article, idx) => (
+                        <div key={idx} className="flex gap-9 items-start mb-4">
+                            <div className="relative w-[139px] h-[120px]">
+                                <Image src={article.image} alt="Blog thumbnail" fill className="object-cover" />
+                            </div>
+                            <div className="flex-1">
+                                <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-3 leading-snug">
+                                    {article.title1}
+                                </h2>
+                                <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-5 leading-snug">
+                                    {article.title2}
+                                </h2>
+                                <div className="flex gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <Icon icon="mingcute:time-line" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
+                                        <span className="text-[#2B2B2B]/80 text-[14px]">{article.date}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Icon icon="streamline-ultimate:notes-tasks" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
+                                        <span className="text-[#2B2B2B]/80 text-[14px]">{article.author}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+
+                    <div>
+                        <h1 className="text-[24px] text-[#2B2B2B] font-semibold mt-20 mb-9">Tags</h1>
+                        <div className="w-[593px] h-[278px] flex flex-wrap gap-2">
+                            {tags.map((tag, idx) => (
+                                <h1
+                                    key={idx}
+                                    className="bg-[#C84E26]/80 text-[20px] font-semibold text-[#FEFEFE] flex items-center justify-center rounded py-[14px] px-5"
+                                >
+                                    {tag}
+                                </h1>
+                            ))}
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h1 className="text-[24px] font-semibold text-[#2B2B2B] mt-20 mb-5">Practice Areas</h1>
+                        {practiceAreas.map((area, idx) => (
+                            <div key={idx} className="mb-2">
+                                <p className="text-[18px] text-[#2B2B2B]">{area}</p>
+                                {idx !== practiceAreas.length - 1 && (
+                                    <div className="w-[593px] border-[0.5px] border-[#969595]/30 mb-2"></div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default ArticlesSection;
