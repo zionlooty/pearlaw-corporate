@@ -13,7 +13,7 @@ const HelpSection = () => {
             src="/assets/image5.jpg"
             alt="Help Background"
             fill
-            className="object-cover rounded-tr-[30px] rounded-bl-[30px]"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-[#131927]/60 rounded-tr-[30px] rounded-bl-[30px]" />
