@@ -5,7 +5,7 @@ import React from 'react';
 const ArticlesSection = () => {
     const blog = [
         {
-            image: "/about.jpg",
+            image: "/assets/about.jpg",
             title: "How is Mediation Useful in Family Law Cases?",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -14,7 +14,7 @@ const ArticlesSection = () => {
             comments: "4 Comments",
         },
         {
-            image: "/blog2.jpg",
+            image: "/assets/blog2.jpg",
             title: "How is Mediation Useful in Family Law Cases?",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -23,7 +23,7 @@ const ArticlesSection = () => {
             comments: "4 Comments",
         },
         {
-            image: "/blog1.jpg",
+            image: "/assets/blog1.jpg",
             title: "Navigating Cruise Ship Contractual Claim Restrictions",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -32,7 +32,7 @@ const ArticlesSection = () => {
             comments: "4 Comments",
         },
         {
-            image: "/blog3.jpg",
+            image: "/assets/blog3.jpg",
             title: "A Legal Guide to Child Support and Parental Responsibilities",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -41,7 +41,7 @@ const ArticlesSection = () => {
             comments: "4 Comments",
         },
         {
-            image: "/blog5.jpg",
+            image: "/assets/blog5.jpg",
             title: "The Role of Attorneys in Domestic Abuse Cases",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -50,7 +50,7 @@ const ArticlesSection = () => {
             comments: "4 Comments",
         },
         {
-            image: "/blog6.jpg",
+            image: "/assets/blog6.jpg",
             title: "The Role of Family Courts in child Protection and Welfare",
             description:
                 "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
@@ -62,21 +62,21 @@ const ArticlesSection = () => {
 
     const recentArticles = [
         {
-            image: "/blog1.jpg",
+            image: "/assets/blog1.jpg",
             title1: "Navigating Cruise Ship Contractual",
             title2: "Claim Restrictions",
             date: "Feb 26, 2025",
             author: "Adam Ekong",
         },
         {
-            image: "/blog2.jpg",
+            image: "/assets/blog2.jpg",
             title1: "Understand Your Legal Right In",
             title2: "Domestic Violence Cases",
             date: "Feb 26, 2025",
             author: "Adam",
         },
         {
-            image: "/blog3.jpg",
+            image: "/assets/blog3.jpg",
             title1: "A Legal Guide to Child Support and",
             title2: "Parental Responsibilities",
             date: "Feb 26, 2025",
