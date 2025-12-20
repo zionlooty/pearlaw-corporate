@@ -27,7 +27,7 @@ const LegalSection = () => {
   ];
 
   return (
-    <section className="w-full flex flex-col items-center relative mt-[120px] px-3 sm:px-4">
+    <section className="w-full flex flex-col items-center relative mt-[200px] px-3 sm:px-4">
 
       {/* Background */}
       <div className="

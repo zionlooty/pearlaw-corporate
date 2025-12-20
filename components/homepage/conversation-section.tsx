@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 const ConversationSection = () => {
     return (
-        <section className="flex items-center justify-center w-full mt-[120px]">
+        <section className="flex items-center justify-center w-full mt-[200px]">
             <div className='w-full max-w-[868px] h-auto lg:h-[614px] border rounded-[8px] relative'>
 
                 <Image
