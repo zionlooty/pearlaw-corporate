@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav className="sticky top-0 z-50 w-full flex justify-between items-center px-5 md:px-[50px] py-5 bg-white shadow-md">
 
             <Link href="/" className="flex items-center gap-3">
-                <Image src="/logo.png" width={45} height={45} alt="logo" />
+                <Image src="/assets/logo.png" width={45} height={45} alt="logo" />
                 <span className="hidden md:block font-semibold text-[20px]">
                     Pearlaw Corporate
                 </span>

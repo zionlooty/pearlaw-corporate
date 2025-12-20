@@ -16,7 +16,7 @@ const WorkSection = () => {
 
                 {/* Background */}
                 <Image
-                    src="/work.jpg"
+                    src="/assets/work.jpg"
                     alt="How we work"
                     fill
                     className="object-cover"
