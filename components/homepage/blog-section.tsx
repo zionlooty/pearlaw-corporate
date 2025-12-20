@@ -4,21 +4,21 @@ import React from "react";
 
 const blogs = [
   {
-    image: "/blog1.jpg",
+    image: "/assets/blog1.jpg",
     title: "Navigating Cruise Ship Contractual Claim Restrictions",
     date: "Feb 28, 2025",
     author: "Adam Ekongo",
     comments: "4 Comments",
   },
   {
-    image: "/blog2.jpg",
+    image: "/assets/blog2.jpg",
     title: "Understanding Your Legal Rights in Domestic Violence Cases",
     date: "Feb 28, 2025",
     author: "Adamu Julius",
     comments: "1 Comment",
   },
   {
-    image: "/blog3.jpg",
+    image: "/assets/blog3.jpg",
     title: "A Legal Guide to Child Support and Parental Responsibilities",
     date: "Feb 28, 2025",
     author: "Tony Patra",
@@ -28,29 +28,29 @@ const blogs = [
 
 const BlogSection = () => {
   return (
-    <section className="flex flex-col items-center mt-[120px]">
-      
+    <section className="flex flex-col items-center mt-[120px] px-4 sm:px-6">
+
+  
       <div className="text-center flex flex-col">
-        <h1 className="uppercase text-[16px] text-[#2B2B2B]/60 mb-[24px]">
+        <h1 className="uppercase text-[16px] text-[#2B2B2B]/60 mb-6">
           our blogs
         </h1>
 
-        <h1 className="uppercase text-[32px] font-semibold text-[#2B2B2B] mb-[24px]">
+        <h1 className="uppercase text-[28px] sm:text-[32px] font-semibold text-[#2B2B2B] mb-6">
           recent articles
         </h1>
 
-        <div className="h-[38px] border-l-2 border-[#C84E26] mb-12 mx-auto" />
+        <div className="h-[28px] sm:h-[38px] border-l-2 border-[#C84E26] mb-12 mx-auto" />
       </div>
 
-     
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+   
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="w-[409px] h-[500px] rounded-[8px] bg-white shadow-lg overflow-hidden flex flex-col"
+            className="w-full max-w-[409px] rounded-[8px] bg-white shadow-lg overflow-hidden flex flex-col mx-auto"
           >
-            
-            <div className="relative w-full h-[348px] overflow-hidden">
+            <div className="relative w-full h-[220px] sm:h-[260px] md:h-[280px] lg:h-[348px] overflow-hidden">
               <Image
                 src={blog.image}
                 alt={blog.title}
@@ -60,13 +60,12 @@ const BlogSection = () => {
               />
             </div>
 
-            
-            <div className="flex flex-col px-6 pt-6">
-              <h1 className="text-[20px] font-semibold text-[#2B2B2B] mb-4 leading-snug">
+            <div className="flex flex-col px-4 sm:px-6 pt-4 sm:pt-6 pb-6">
+              <h1 className="text-[18px] sm:text-[20px] font-semibold text-[#2B2B2B] mb-3 leading-snug">
                 {blog.title}
               </h1>
 
-              <div className="flex items-center gap-3 text-[14px] text-[#2B2B2B]/80 uppercase flex-wrap">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[12px] sm:text-[14px] text-[#2B2B2B]/80 uppercase">
                 <span>{blog.date}</span>
                 <span>•</span>
                 <span>{blog.author}</span>
@@ -77,13 +76,14 @@ const BlogSection = () => {
           </div>
         ))}
       </div>
-      <div className="mt-9">
-        <button
-          className="bg-[#C84E26] text-white text-[12px] font-semibold rounded-[4px] py-[13px] px-[18px] w-[179px] h-[50px] flex items-center justify-center gap-1 ">
-          <span className="text-[12px] font-semibold capitalize">read the blogs</span>
-          <ArrowRight size={9.04} />
-        </button>
 
+  
+      <div className="mt-8 sm:mt-10">
+        <button
+          className="bg-[#C84E26] text-white text-[12px] sm:text-[14px] font-semibold rounded-[4px] py-3 px-5 sm:px-6 flex items-center justify-center gap-2">
+          <span className="capitalize">read the blogs</span>
+          <ArrowRight size={14} />
+        </button>
       </div>
     </section>
   );
