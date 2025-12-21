@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 const QuestionSection = () => {
   return (
-    <section className='w-full mt-[120px] flex flex-col items-center px-4'>
+    <section className='w-full mt-[200px] flex flex-col items-center px-4'>
       <div className='w-full max-w-[1280px]'>
         {/* Header */}
         <div className='mb-6 text-center'>
