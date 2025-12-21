@@ -126,9 +126,9 @@ const PlansSection = () => {
 
               {/* JADE Plan */}
               <div className="w-full sm:w-[355px] h-auto sm:h-[598px] rounded-[14px] p-6 text-left shadow-2xl border bg-[#F1F2F6] flex flex-col text-center">
-                <h1 className="text-[14px] font-semibold text-[#2B2B2B] mb-2">JADE Plan</h1>
-                <h1 className="text-[32px] font-bold text-[#2B2B2B] mb-2">#1,400,000</h1>
-                <p className="text-[#2B2B2B]/60 text-[14px] mb-6">
+                <h1 className="text-[14px] font-semibold text-center text-[#2B2B2B] mb-2">JADE Plan</h1>
+                <h1 className="text-[32px] font-bold text-center  text-[#2B2B2B] mb-2">#1,400,000</h1>
+                <p className="text-[#2B2B2B]/60 text-[14px] text-center mb-6">
                   Comprehensive legal support for <br /> established businesses
                 </p>
 
