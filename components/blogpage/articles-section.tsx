@@ -106,21 +106,19 @@ const ArticlesSection = () => {
         "Company Governance",
     ];
 
-
     return (
-        <section className="w-[1282px] mx-auto flex items-center justify-center mt-[80px] p-10">
-            <div className="grid grid-cols-[629px_auto] gap-[58px] w-full">
-
+        <section className="w-full px-4 mt-[80px]">
+            <div className="max-w-[1282px] mx-auto grid lg:grid-cols-[629px_auto] gap-[58px] w-full grid-cols-1">
+                {/* Left Column */}
                 <div className="flex flex-col gap-10">
                     {blog.map((item, index) => (
                         <div
                             key={index}
-                            className="relative w-[629px] flex flex-col items-center h-[907px] bg-white shadow-lg overflow-hidden"
+                            className="relative w-full lg:w-[629px] flex flex-col items-center h-[907px] bg-white shadow-lg overflow-hidden"
                         >
                             <div className="relative w-full h-[514px] overflow-hidden mb-7">
                                 <Image src={item.image} alt="Blog image" fill className="object-cover" />
-
-                                {item.image === "/about.jpg" && (
+                                {item.image === "/assets/about.jpg" && (
                                     <div className="absolute bottom-0 left-0 flex justify-center items-center gap-2 bg-[#F1F2F6] w-[217px] h-[76px]">
                                         <Icon icon="mdi:flash" className="text-[#C84E26] w-[20px] h-[20px]" />
                                         <span className="text-[#C84E26] text-[16px] font-semibold">STICKY POST</span>
@@ -136,14 +134,14 @@ const ArticlesSection = () => {
 
                                 <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-20">
                                     <span>{item.date}</span>
-                                    <span className='w-[8px] h-[18px] text-[#2B2B2B] text-[14px]'>.</span>
+                                    <span className="w-[8px] h-[18px] text-[#2B2B2B] text-[14px]">.</span>
                                     <span>{item.author}</span>
-                                    <span className='w-[8px] h-[18px] text-[#2B2B2B] text-[14px]'>.</span>
+                                    <span className="w-[8px] h-[18px] text-[#2B2B2B] text-[14px]">.</span>
                                     <span>{item.comments}</span>
                                 </div>
 
                                 <div className="w-full flex justify-start">
-                                    <button className="w-[113px] h-[46px] bg-[#C84E26] px-[18px] py-[16px] rounded-[4px] text-[14px] text-[#F1F2F6]">
+                                    <button className="w-full sm:w-[113px] h-[46px] bg-[#C84E26] px-[18px] py-[16px] rounded-[4px] text-[14px] text-[#F1F2F6]">
                                         Read More
                                     </button>
                                 </div>
@@ -152,65 +150,67 @@ const ArticlesSection = () => {
                     ))}
                 </div>
 
+                {/* Right Column */}
+                <div className="flex flex-col justify-start w-full lg:w-[631px]">
+                    {/* Recent Articles */}
+                    <div>
+                        <div className="w-[32px] border-b-3 border-[#C84E26] mb-4" />
+                        <h1 className="text-[18px] font-bold text-[#2B2B2B] uppercase mb-4">Recent Articles</h1>
 
-                <div className="flex flex-col justify-start w-[631px]">
-                    <div className="w-[32px] border-b-3 border-[#C84E26] mb-4" />
-                    <h1 className="text-[18px] font-bold text-[#2B2B2B] uppercase mb-4">Recent Articles</h1>
-
-                    {recentArticles.map((article, idx) => (
-                        <div key={idx} className="flex gap-9 items-start mb-4">
-                            <div className="relative w-[139px] h-[120px]">
-                                <Image src={article.image} alt="Blog thumbnail" fill className="object-cover" />
-                            </div>
-                            <div className="flex-1">
-                                <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-3 leading-snug">
-                                    {article.title1}
-                                </h2>
-                                <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-5 leading-snug">
-                                    {article.title2}
-                                </h2>
-                                <div className="flex gap-4">
-                                    <div className="flex items-center gap-2">
-                                        <Icon icon="mingcute:time-line" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
-                                        <span className="text-[#2B2B2B]/80 text-[14px]">{article.date}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Icon icon="streamline-ultimate:notes-tasks" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
-                                        <span className="text-[#2B2B2B]/80 text-[14px]">{article.author}</span>
+                        {recentArticles.map((article, idx) => (
+                            <div key={idx} className="flex gap-9 items-start mb-4 flex-col sm:flex-row">
+                                <div className="relative w-full sm:w-[139px] h-[120px]">
+                                    <Image src={article.image} alt="Blog thumbnail" fill className="object-cover" />
+                                </div>
+                                <div className="flex-1">
+                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-2 leading-snug">
+                                        {article.title1}
+                                    </h2>
+                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-2 leading-snug">
+                                        {article.title2}
+                                    </h2>
+                                    <div className="flex gap-4 flex-wrap">
+                                        <div className="flex items-center gap-2">
+                                            <Icon icon="mingcute:time-line" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
+                                            <span className="text-[#2B2B2B]/80 text-[14px]">{article.date}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Icon icon="streamline-ultimate:notes-tasks" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
+                                            <span className="text-[#2B2B2B]/80 text-[14px]">{article.author}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
 
-
+                    {/* Tags */}
                     <div>
                         <h1 className="text-[24px] text-[#2B2B2B] font-semibold mt-20 mb-9">Tags</h1>
-                        <div className="w-[593px] h-[278px] flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2">
                             {tags.map((tag, idx) => (
-                                <h1
+                                <span
                                     key={idx}
                                     className="bg-[#C84E26]/80 text-[20px] font-semibold text-[#FEFEFE] flex items-center justify-center rounded py-[14px] px-5"
                                 >
                                     {tag}
-                                </h1>
+                                </span>
                             ))}
                         </div>
                     </div>
 
-
+                    {/* Practice Areas */}
                     <div>
                         <h1 className="text-[24px] font-semibold text-[#2B2B2B] mt-20 mb-5">Practice Areas</h1>
                         {practiceAreas.map((area, idx) => (
                             <div key={idx} className="mb-2">
                                 <p className="text-[18px] text-[#2B2B2B]">{area}</p>
                                 {idx !== practiceAreas.length - 1 && (
-                                    <div className="w-[593px] border-[0.5px] border-[#969595]/30 mb-2"></div>
+                                    <div className="w-full border-[0.5px] border-[#969595]/30 mb-2"></div>
                                 )}
                             </div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </section>
