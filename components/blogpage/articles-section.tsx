@@ -165,11 +165,16 @@ const ArticlesSection = () => {
                         <h1 className="text-[18px] font-bold text-[#2B2B2B] uppercase mb-4">Recent Articles</h1>
 
                         {recentArticles.map((article, idx) => (
-                            <div key={idx} className="flex gap-9 items-start mb-4 flex-col sm:flex-row">
-                                <div className="relative w-full sm:w-[139px] h-[120px]">
+                            <div
+                                key={idx}
+                                className="flex gap-4 items-start mb-4" // flex-row always, no flex-col
+                            >
+                                {/* Image */}
+                                <div className="relative w-[139px] h-[120px] flex-shrink-0">
                                     <Image src={article.image} alt="Blog thumbnail" fill className="object-cover" />
                                 </div>
 
+                                {/* Text */}
                                 <div className="flex-1">
                                     <h2 className="text-[18px] font-semibold text-[#2B2B2B] leading-snug">
                                         {article.title1}
@@ -190,6 +195,7 @@ const ArticlesSection = () => {
                                 </div>
                             </div>
                         ))}
+
                     </div>
 
                     {/* Tags */}
