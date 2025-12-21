@@ -8,7 +8,7 @@ const TechnologySection = () => {
             <div className="relative w-full max-w-[1440px] min-h-[423px] flex justify-center items-start">
 
                 <Image
-                    src="/image5.jpg"
+                    src="/assets/image5.jpg"
                     alt="Technology Background"
                     fill
                     priority
