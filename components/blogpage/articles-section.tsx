@@ -8,7 +8,7 @@ const ArticlesSection = () => {
             image: "/assets/about.jpg",
             title: "How is Mediation Useful in Family Law Cases?",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -17,7 +17,7 @@ const ArticlesSection = () => {
             image: "/assets/blog2.jpg",
             title: "How is Mediation Useful in Family Law Cases?",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -26,7 +26,7 @@ const ArticlesSection = () => {
             image: "/assets/blog1.jpg",
             title: "Navigating Cruise Ship Contractual Claim Restrictions",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -35,7 +35,7 @@ const ArticlesSection = () => {
             image: "/assets/blog3.jpg",
             title: "A Legal Guide to Child Support and Parental Responsibilities",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -44,7 +44,7 @@ const ArticlesSection = () => {
             image: "/assets/blog5.jpg",
             title: "The Role of Attorneys in Domestic Abuse Cases",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -53,7 +53,7 @@ const ArticlesSection = () => {
             image: "/assets/blog6.jpg",
             title: "The Role of Family Courts in child Protection and Welfare",
             description:
-                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success. Her strategic approach and attention to detail have earned her recognition as one of the top legal minds in the region.",
+                "With over 15 years of experience in corporate law and litigation, Pearl leads our team with unwavering dedication to client success.",
             date: "Feb 26, 2025",
             author: "Adam Ekongo",
             comments: "4 Comments",
@@ -109,14 +109,16 @@ const ArticlesSection = () => {
     return (
         <section className="w-full px-4 mt-[80px]">
             <div className="max-w-[1282px] mx-auto grid lg:grid-cols-[629px_auto] gap-[58px] w-full grid-cols-1">
+
                 {/* Left Column */}
                 <div className="flex flex-col gap-10">
                     {blog.map((item, index) => (
                         <div
                             key={index}
-                            className="relative w-full lg:w-[629px] flex flex-col items-center h-[907px] bg-white shadow-lg overflow-hidden"
+                            className="relative w-full lg:w-[629px] flex flex-col bg-white shadow-lg overflow-hidden min-h-[750px]"
                         >
-                            <div className="relative w-full h-[514px] overflow-hidden mb-7">
+                            {/* Image */}
+                            <div className="relative w-full h-[514px] overflow-hidden">
                                 <Image src={item.image} alt="Blog image" fill className="object-cover" />
                                 {item.image === "/assets/about.jpg" && (
                                     <div className="absolute bottom-0 left-0 flex justify-center items-center gap-2 bg-[#F1F2F6] w-[217px] h-[76px]">
@@ -126,25 +128,27 @@ const ArticlesSection = () => {
                                 )}
                             </div>
 
-                            <div className="flex flex-col px-6 pt-6 w-full">
+                            <div className="flex flex-col px-6 pt-6 pb-6 w-full flex-1">
                                 <h1 className="text-[24px] font-semibold text-[#2B2B2B] mb-4 leading-snug">
                                     {item.title}
                                 </h1>
-                                <h5 className="text-[14px] text-[#2B2B2B]/70 mb-3">{item.description}</h5>
 
-                                <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-20">
+                                <h5 className="text-[14px] text-[#2B2B2B]/70 mb-3">
+                                    {item.description}
+                                </h5>
+
+                                <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-6">
                                     <span>{item.date}</span>
-                                    <span className="w-[8px] h-[18px] text-[#2B2B2B] text-[14px]">.</span>
+                                    <span className="w-[8px]">.</span>
                                     <span>{item.author}</span>
-                                    <span className="w-[8px] h-[18px] text-[#2B2B2B] text-[14px]">.</span>
+                                    <span className="w-[8px]">.</span>
                                     <span>{item.comments}</span>
                                 </div>
 
-                                <div className="w-full flex justify-start">
-                                    <button className="w-full sm:w-[113px] h-[46px] bg-[#C84E26] px-[18px] py-[16px] rounded-[4px] text-[14px] text-[#F1F2F6]">
-                                        Read More
-                                    </button>
-                                </div>
+                                {/* Button stays inside */}
+                                <button className="w-full sm:w-[113px] h-[46px] bg-[#C84E26] rounded-[4px] text-[14px] text-[#F1F2F6]">
+                                    Read More
+                                </button>
                             </div>
                         </div>
                     ))}
@@ -154,7 +158,7 @@ const ArticlesSection = () => {
                 <div className="flex flex-col justify-start w-full lg:w-[631px]">
                     {/* Recent Articles */}
                     <div>
-                        <div className="w-[32px] border-b-3 border-[#C84E26] mb-4" />
+                        <div className="w-[32px] border-b-4 border-[#C84E26] mb-4" />
                         <h1 className="text-[18px] font-bold text-[#2B2B2B] uppercase mb-4">Recent Articles</h1>
 
                         {recentArticles.map((article, idx) => (
@@ -162,21 +166,22 @@ const ArticlesSection = () => {
                                 <div className="relative w-full sm:w-[139px] h-[120px]">
                                     <Image src={article.image} alt="Blog thumbnail" fill className="object-cover" />
                                 </div>
+
                                 <div className="flex-1">
-                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-2 leading-snug">
+                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] leading-snug">
                                         {article.title1}
                                     </h2>
-                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] mb-2 leading-snug">
+                                    <h2 className="text-[18px] font-semibold text-[#2B2B2B] leading-snug">
                                         {article.title2}
                                     </h2>
-                                    <div className="flex gap-4 flex-wrap">
+                                    <div className="flex gap-4 flex-wrap mt-2">
                                         <div className="flex items-center gap-2">
-                                            <Icon icon="mingcute:time-line" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
-                                            <span className="text-[#2B2B2B]/80 text-[14px]">{article.date}</span>
+                                            <Icon icon="mingcute:time-line" className="w-[15px]" />
+                                            <span className="text-[14px]">{article.date}</span>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <Icon icon="streamline-ultimate:notes-tasks" className="w-[15px] h-[16px] text-[#2B2B2B]/80" />
-                                            <span className="text-[#2B2B2B]/80 text-[14px]">{article.author}</span>
+                                            <Icon icon="streamline-ultimate:notes-tasks" className="w-[15px]" />
+                                            <span className="text-[14px]">{article.author}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -186,13 +191,10 @@ const ArticlesSection = () => {
 
                     {/* Tags */}
                     <div>
-                        <h1 className="text-[24px] text-[#2B2B2B] font-semibold mt-20 mb-9">Tags</h1>
+                        <h1 className="text-[24px] font-semibold text-[#2B2B2B] mt-20 mb-9">Tags</h1>
                         <div className="flex flex-wrap gap-2">
                             {tags.map((tag, idx) => (
-                                <span
-                                    key={idx}
-                                    className="bg-[#C84E26]/80 text-[20px] font-semibold text-[#FEFEFE] flex items-center justify-center rounded py-[14px] px-5"
-                                >
+                                <span key={idx} className="bg-[#C84E26]/80 text-[20px] font-semibold text-white rounded py-[14px] px-5">
                                     {tag}
                                 </span>
                             ))}
@@ -206,12 +208,14 @@ const ArticlesSection = () => {
                             <div key={idx} className="mb-2">
                                 <p className="text-[18px] text-[#2B2B2B]">{area}</p>
                                 {idx !== practiceAreas.length - 1 && (
-                                    <div className="w-full border-[0.5px] border-[#969595]/30 mb-2"></div>
+                                    <div className="w-full border border-[#969595]/30 mb-2"></div>
                                 )}
                             </div>
                         ))}
                     </div>
+
                 </div>
+
             </div>
         </section>
     );
