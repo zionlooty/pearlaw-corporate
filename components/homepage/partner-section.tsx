@@ -2,7 +2,7 @@ import { ArrowRight, CheckCircle2Icon } from "lucide-react";
 
 const PartnerSection = () => {
     return (
-        <section className="flex flex-col items-center mt-30 gap-5 px-4">
+        <section className="flex flex-col items-center mt-15 gap-5 px-4">
 
             {/* Badge */}
             <div className=" flex items-center gap-1  w-[170px] h-[30px] bg-[#A45C2A]/20 sm:w-[190px] sm:h-[34px]              
