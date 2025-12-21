@@ -3,10 +3,34 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 
 const TechnologySection = () => {
+    const cards = [
+        {
+            icon: "ant-design:fund-outlined",
+            title: "Pearlaw Funded",
+            description: "Established with a vision to provide exceptional legal services to our community.",
+        },
+        {
+            icon: "streamline-flex:decent-work-and-economic-growth",
+            title: "Expansion & Growth",
+            description: "Expanded to a team of 15 attorneys and opened our second office location.",
+        },
+        {
+            icon: "game-icons:achievement",
+            title: "Recognition of Excellence",
+            description: "Received multiple industry awards and recognition for outstanding legal representation.",
+        },
+        {
+            icon: "streamline:ai-technology-spark",
+            title: "Technology Innovation",
+            description: "Pioneered digital client services and modern case management systems.",
+        },
+    ];
+
     return (
         <section className="w-full flex justify-center mt-[60px] px-4">
-            <div className="relative w-full max-w-[1440px] min-h-[423px] flex justify-center items-start">
+            <div className="relative w-full max-w-[1440px] flex justify-center items-start">
 
+                {/* Background Image */}
                 <Image
                     src="/assets/image5.jpg"
                     alt="Technology Background"
@@ -15,87 +39,36 @@ const TechnologySection = () => {
                     className="object-cover"
                 />
 
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-[#131927]/60 z-10" />
 
+                {/* Cards Container */}
                 <div
                     className="
                         relative z-20
                         w-full max-w-[1280px]
-                        h-auto md:h-[263px]
-                        border border-[#979797]
-                        rounded-tr-[30px] rounded-bl-[30px]
                         mt-20
                         p-8
-                        flex flex-col md:flex-row flex-wrap
-                        justify-center items-center gap-[24px]
+                        flex flex-col lg:flex-row flex-wrap gap-[24px] justify-center lg:justify-between
                     "
                 >
-
-
-                    <div className="flex flex-col items-center w-full sm:w-[293px] h-auto sm:h-[189px] p-4">
-                        <Icon
-                            icon="ant-design:fund-outlined"
-                            className="text-[#C84E26] mb-3 w-[48px] h-[48px]"
-                        />
-
-                        <h2 className="text-sm text-[#FEFEFE] font-semibold uppercase text-center mb-5">
-                            Pearlaw Funded
-                        </h2>
-
-                        <p className="text-[#FEFEFE]/80 text-[16px] text-center">
-                            Established with a vision to provide exceptional legal services to our community.
-                        </p>
-                    </div>
-
-
-                    <div className="flex flex-col items-center w-full sm:w-[293px] h-auto sm:h-[189px] p-4">
-                        <Icon
-                            icon="streamline-flex:decent-work-and-economic-growth"
-                            className="text-[#C84E26] mb-3 w-[48px] h-[48px]"
-                        />
-
-                        <h2 className="text-sm text-[#FEFEFE] font-semibold uppercase text-center mb-5">
-                            Expansion & Growth
-                        </h2>
-
-                        <p className="text-[#FEFEFE]/80 text-[16px] text-center">
-                            Expanded to a team of 15 attorneys and opened our second office location.
-                        </p>
-                    </div>
-
-
-                    <div className="flex flex-col items-center w-full sm:w-[293px] h-auto sm:h-[189px] p-4">
-                        <Icon
-                            icon="game-icons:achievement"
-                            className="text-[#C84E26] mb-3 w-[48px] h-[48px]"
-                        />
-
-                        <h2 className="text-sm text-[#FEFEFE] font-semibold uppercase text-center mb-5">
-                            Recognition of Excellence
-                        </h2>
-
-                        <p className="text-[#FEFEFE]/80 text-[16px] text-center">
-                            Received multiple industry awards and recognition for outstanding legal representation.
-                        </p>
-                    </div>
-
-
-                    <div className="flex flex-col items-center w-full sm:w-[293px] h-auto sm:h-[189px] p-4">
-                        <Icon
-                            icon="streamline:ai-technology-spark"
-                            className="text-[#C84E26] mb-3 w-[48px] h-[48px]"
-                        />
-
-                        <h2 className="text-sm text-[#FEFEFE] font-semibold uppercase text-center mb-5">
-                            Technology Innovation
-                        </h2>
-
-                        <p className="text-[#FEFEFE]/80 text-[16px] text-center">
-                            Pioneered digital client services and modern case management systems.
-                        </p>
-                    </div>
-
-
+                    {cards.map((item, idx) => (
+                        <div
+                            key={idx}
+                            className="flex flex-col justify-between items-center w-full lg:w-[calc(25%-18px)] h-auto lg:h-[250px] p-4"
+                        >
+                            <Icon
+                                icon={item.icon}
+                                className="text-[#C84E26] mb-3 w-[48px] h-[48px]"
+                            />
+                            <h2 className="text-sm text-[#FEFEFE] font-semibold uppercase text-center mb-3">
+                                {item.title}
+                            </h2>
+                            <p className="text-[#FEFEFE]/80 text-[16px] text-center">
+                                {item.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
 
             </div>
