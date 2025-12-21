@@ -29,11 +29,11 @@ const LegalSection = () => {
   return (
     <section className="w-full flex flex-col items-center relative mt-[200px] px-3 sm:px-4">
 
-      {/* Background */}
+     
       <div className="
         relative
         w-full lg:w-[1440px]
-        min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[652px]
+        min-h-[400px] sm:min-h-[500px] md:min-h-[600px] h-[600px] lg:min-h-[652px]
         flex flex-col items-center
       ">
         <Image
@@ -46,7 +46,7 @@ const LegalSection = () => {
 
         <div className="absolute inset-0 bg-[#131927]/60 z-10" />
 
-        {/* Title */}
+      
         <div className="relative z-20 flex flex-col items-center text-center pt-10 lg:pt-12">
           <h1 className="capitalize text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] text-white mb-4">
             Our Legal Team
@@ -61,7 +61,7 @@ const LegalSection = () => {
         </div>
       </div>
 
-      {/* Cards */}
+      
       <div className="
         flex flex-wrap justify-center
         gap-4 sm:gap-5 lg:gap-6
