@@ -115,7 +115,7 @@ const ArticlesSection = () => {
                     {blog.map((item, index) => (
                         <div
                             key={index}
-                            className="relative w-full lg:w-[629px] flex flex-col bg-white shadow-lg overflow-hidden min-h-[750px]"
+                            className="relative w-full lg:w-[629px] flex flex-col bg-white shadow-lg overflow-hidden"
                         >
                             {/* Image */}
                             <div className="relative w-full h-[514px] overflow-hidden">
@@ -128,7 +128,8 @@ const ArticlesSection = () => {
                                 )}
                             </div>
 
-                            <div className="flex flex-col px-6 pt-6 pb-6 w-full flex-1">
+                            {/* Content */}
+                            <div className="flex flex-col px-6 pt-6 pb-6 w-full">
                                 <h1 className="text-[24px] font-semibold text-[#2B2B2B] mb-4 leading-snug">
                                     {item.title}
                                 </h1>
@@ -137,7 +138,7 @@ const ArticlesSection = () => {
                                     {item.description}
                                 </h5>
 
-                                <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-6">
+                                <div className="flex items-center gap-3 text-[16px] text-[#2B2B2B]/70 flex-wrap mb-4">
                                     <span>{item.date}</span>
                                     <span className="w-[8px]">.</span>
                                     <span>{item.author}</span>
@@ -145,14 +146,16 @@ const ArticlesSection = () => {
                                     <span>{item.comments}</span>
                                 </div>
 
-                                {/* Button stays inside */}
-                                <button className="w-full sm:w-[113px] h-[46px] bg-[#C84E26] rounded-[4px] text-[14px] text-[#F1F2F6]">
+                                {/* Button slightly up from bottom */}
+                                <button className="w-full sm:w-[113px] h-[46px] bg-[#C84E26] rounded-[4px] text-[14px] text-[#F1F2F6] mt-6">
                                     Read More
                                 </button>
                             </div>
                         </div>
                     ))}
                 </div>
+
+
 
                 {/* Right Column */}
                 <div className="flex flex-col justify-start w-full lg:w-[631px]">
