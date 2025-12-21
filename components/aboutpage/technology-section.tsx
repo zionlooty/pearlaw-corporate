@@ -85,6 +85,6 @@ const TechnologySection = () => {
             </div>
         </section>
     );
-};
+}
 
 export default TechnologySection;

@@ -18,7 +18,7 @@ const FooterSection = () => {
             href="/"
             className="flex items-center gap-4 text-white text-[20px] font-semibold mb-6 whitespace-nowrap"
           >
-            <Image src="/logo1.png" width={48} height={48} alt="Pearlaw" />
+            <Image src="/assets/logo1.png" width={48} height={48} alt="Pearlaw" />
             <span>Pearlaw Corporate</span>
           </Link>
 
