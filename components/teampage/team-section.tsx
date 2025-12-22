@@ -12,7 +12,6 @@ const LegalSection = () => {
 
   return (
     <section className="w-full flex flex-col items-center relative mt-[120px] px-4">
-
       {/* Hero Background */}
       <div className="relative w-full max-w-[1440px] h-[400px] md:h-[652px] flex flex-col items-center">
         <Image
@@ -22,9 +21,7 @@ const LegalSection = () => {
           priority
           className="object-cover"
         />
-
         <div className="absolute inset-0 bg-[#131927]/60 z-10" />
-
         <div className="relative z-20 flex flex-col items-center text-center pt-12">
           <h1 className="capitalize text-[24px] md:text-[28px] text-white mb-4">
             Our Legal Team
@@ -40,13 +37,13 @@ const LegalSection = () => {
       </div>
 
       {/* Team Cards */}
-      <div className="flex flex-wrap justify-center gap-4 md:gap-6 -mt-20 md:-mt-75 z-20">
+      <div className="-mt-20 md:-mt-40 lg:-mt-75 z-20 w-full max-w-[1280px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="relative w-[90%] sm:w-[300px] h-[380px] bg-[#F5F5F5] rounded-[8px] shadow-lg overflow-hidden"
+            className="relative w-full max-w-[300px] h-auto bg-[#F5F5F5] rounded-[8px] shadow-lg overflow-hidden"
           >
-            <div className="relative w-full h-[250px] sm:h-[300px]">
+            <div className="relative w-full h-[220px] sm:h-[250px] md:h-[280px] lg:h-[300px]">
               <Image
                 src={member.img}
                 alt={member.name}
@@ -66,6 +63,7 @@ const LegalSection = () => {
           </div>
         ))}
       </div>
+
     </section>
   );
 };
