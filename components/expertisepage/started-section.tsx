@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const StartedSection = () => {
     return (
-        <section className="w-full bg-gradient-to-r from-[#2B2B2B] to-[#1E223F] mt-[120px]">
+        <section className="w-full bg-gradient-to-r from-[#2B2B2B] to-[#1E223F] mt-[40px]">
             <div className="w-full max-w-[1440px] h-auto md:h-[388px] mx-auto flex flex-col items-center justify-center px-4 md:px-6 text-center py-10 md:py-0">
 
                 <h1 className="text-[14px] font-semibold text-[#FEFEFE]/80 uppercase mb-3">
