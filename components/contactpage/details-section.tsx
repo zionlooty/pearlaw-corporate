@@ -18,19 +18,21 @@ const DetailsSection = () => {
                 </div>
 
                 {/* WhatsApp Card */}
+                {/* WhatsApp Card */}
                 <div className="border border-[#969595]/40 px-4 sm:px-6 py-5 mb-4">
                     <div className="flex items-center gap-4">
                         <div className="w-[60px] h-[60px] bg-[#C84E26] rounded-[8px] flex items-center justify-center shrink-0">
-                            <IoLogoWhatsapp className="w-[26px] h-[26px] text-white" />
+                            <IoLogoWhatsapp className="w-[24px] h-[24px] text-white" />
                         </div>
+
                         <div>
-                            <span className="block text-[14px] sm:text-[15px] lg:text-[16px] text-[#2B2B2B]/70">
+                            <span className="block text-[13px] sm:text-[14px] text-[#2B2B2B]/70">
                                 WhatsApp
                             </span>
-                            <h1 className="text-[18px] sm:text-[20px] lg:text-[22px] font-semibold text-[#2B2B2B]">
+                            <h1 className="text-[17px] sm:text-[18px] lg:text-[19px] font-medium text-[#2B2B2B]">
                                 +234 806 430 5645
                             </h1>
-                            <p className="text-[14px] sm:text-[15px] text-[#2B2B2B]/80">
+                            <p className="text-[13px] sm:text-[14px] text-[#2B2B2B]/80">
                                 Quick response available
                             </p>
                         </div>
@@ -41,17 +43,18 @@ const DetailsSection = () => {
                 <div className="border border-[#969595]/40 px-4 sm:px-6 py-5 mb-4">
                     <div className="flex items-center gap-4">
                         <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center shrink-0">
-                            <IoCallOutline className="w-[26px] h-[26px] text-white" />
+                            <IoCallOutline className="w-[24px] h-[24px] text-white" />
                         </div>
+
                         <div>
-                            <span className="block text-[14px] sm:text-[15px] lg:text-[16px] text-[#2B2B2B]/70">
+                            <span className="block text-[13px] sm:text-[14px] text-[#2B2B2B]/70">
                                 Call Us
                             </span>
-                            <h1 className="text-[18px] sm:text-[20px] lg:text-[22px] font-semibold text-[#2B2B2B]">
+                            <h1 className="text-[17px] sm:text-[18px] lg:text-[19px] font-medium text-[#2B2B2B]">
                                 +234 813 614 1666
                             </h1>
-                            <p className="text-[14px] sm:text-[15px] text-[#2B2B2B]/80">
-                                Mon-Fri, 9AM-6PM EST
+                            <p className="text-[13px] sm:text-[14px] text-[#2B2B2B]/80">
+                                Mon–Fri, 9AM–6PM EST
                             </p>
                         </div>
                     </div>
@@ -61,17 +64,18 @@ const DetailsSection = () => {
                 <div className="border border-[#969595]/40 px-4 sm:px-6 py-5 mb-4">
                     <div className="flex items-center gap-4">
                         <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center shrink-0">
-                            <CiMail className="w-[26px] h-[26px] text-white" />
+                            <CiMail className="w-[24px] h-[24px] text-white" />
                         </div>
-                        <div>
-                            <span className="block text-[14px] sm:text-[15px] lg:text-[16px] text-[#2B2B2B]/70">
+
+                        <div className="max-w-[260px] sm:max-w-none">
+                            <span className="block text-[13px] sm:text-[14px] text-[#2B2B2B]/70">
                                 Email
                             </span>
-                            <h1 className="text-[18px] sm:text-[20px] lg:text-[22px] font-semibold text-[#2B2B2B]">
-                                Contact@pearlaw.com
+                            <h1 className="text-[17px] sm:text-[18px] lg:text-[19px] font-medium text-[#2B2B2B] break-words">
+                                contact@pearlaw.com
                             </h1>
-                            <p className="text-[14px] sm:text-[15px] text-[#2B2B2B]/80">
-                                24-hours response time
+                            <p className="text-[13px] sm:text-[14px] text-[#2B2B2B]/80">
+                                24-hour response time
                             </p>
                         </div>
                     </div>
@@ -83,36 +87,38 @@ const DetailsSection = () => {
                         <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center shrink-0">
                             <CiClock2 className="w-[26px] h-[26px] text-white" />
                         </div>
+
                         <div>
-                            <span className="block text-[14px] sm:text-[15px] lg:text-[16px] text-[#2B2B2B]/70">
+                            <span className="block text-[13px] sm:text-[14px] text-[#2B2B2B]/70">
                                 Business Hours
                             </span>
-                            <h1 className="text-[18px] sm:text-[20px] lg:text-[22px] font-semibold text-[#2B2B2B]">
-                                Mon-Fri: 9:00AM - 6:00PM
+                            <h1 className="text-[17px] sm:text-[18px] lg:text-[19px] font-medium text-[#2B2B2B]">
+                                Mon–Fri: 9:00AM – 6:00PM
                             </h1>
-                            <p className="text-[14px] sm:text-[15px] text-[#2B2B2B]/80">
+                            <p className="text-[13px] sm:text-[14px] text-[#2B2B2B]/80">
                                 Closed on Sundays
                             </p>
                         </div>
                     </div>
                 </div>
 
-                   <h1 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold mt-10 text-[#2B2B2B] mb-6">
-                        Connect With Us
-                      </h1>
-                      <div className="flex gap-4">
-                        <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center">
-                          <FaFacebookF className="w-[26px] h-[26px] text-white" />
-                        </div>
-                
-                        <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center">
-                          <FaInstagram className="w-[26px] h-[26px] text-white" />
-                        </div>
-                
-                        <div className="w-[60px] h-[60px] bg-[#131927] rounded-[8px] flex items-center justify-center">
-                          <IoLogoTiktok className="w-[26px] h-[26px] text-white" />
-                        </div>
-                      </div>
+
+                <h1 className="text-[16px] sm:text-[28px] md:text-[32px] font-semibold mt-10 text-[#2B2B2B] mb-6">
+                    Connect With Us
+                </h1>
+                <div className="flex gap-4">
+                    <div className="w-[48px] h-[46px] bg-[#131927] rounded-[8px] flex items-center justify-center">
+                        <FaFacebookF className="w-[24px] h-[24px] text-white" />
+                    </div>
+
+                    <div className="w-[48px] h-[46px] bg-[#131927] rounded-[8px] flex items-center justify-center">
+                        <FaInstagram className="w-[24px] h-[24px] text-white" />
+                    </div>
+
+                    <div className="w-[48px] h-[46px] bg-[#131927] rounded-[8px] flex items-center justify-center">
+                        <IoLogoTiktok className="w-[24px] h-[24px] text-white" />
+                    </div>
+                </div>
 
             </div>
         </section>

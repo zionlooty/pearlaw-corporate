@@ -6,9 +6,9 @@ const ConversationSection = () => {
     <section className="w-full flex items-center flex-col mt-[80px] px-4">
       {/* Heading */}
       <div className="mb-10">
-        <h1 className="text-[#2B2B2B] text-[28px] text-center font-semibold mb-3">
-          Let’s Start the Conversation
-        </h1>
+      <h1 className="text-[22px] sm:text-[28px] font-semibold mb-4 text-[#2B2B2B] capitalize text-center">
+                Let's Start the Conversation
+              </h1>
         <p className="text-[16px] text-[#2B2B2B]/80 text-center">
           We’re here to help you every step of the way
         </p>
