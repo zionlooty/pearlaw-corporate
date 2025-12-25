@@ -20,8 +20,7 @@ const ChooseSection = () => {
 
         <div className="absolute inset-0 bg-[#000000C7] z-10" />
 
-        <div className="relative z-20 w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] h-auto border border-[#979797CC] 
-                        rounded-tr-[30px] rounded-bl-[30px] mt-14 sm:mt-16 md:mt-20 
+        <div className="relative z-20 w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] h-auto  mt-14 sm:mt-16 md:mt-20 
                         p-5 sm:p-8 md:p-10 lg:p-14">
 
 
