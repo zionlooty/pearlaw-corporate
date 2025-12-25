@@ -23,7 +23,12 @@ const ClientSection = () => {
                 <div className="
                     absolute top-0
                     w-[95%]
-                    
+                    sm:max-w-[700px]
+                    md:max-w-[900px]
+                    lg:max-w-[1280px]
+                    border border-[#979797CC]
+                    rounded-tr-[30px] rounded-bl-[30px]
+                    mt-20
                     flex flex-col items-center
                     p-4 sm:p-6 md:p-8
                     text-center

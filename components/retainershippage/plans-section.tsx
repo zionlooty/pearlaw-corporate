@@ -19,7 +19,7 @@ const PlansSection = () => {
 
           <div className="absolute inset-0 bg-[#131927]/60 z-10" />
 
-          <div className="relative z-20 w-full sm:w-[1280px] h-auto sm:h-[964px] border border-[#979797CC] rounded-tr-[30px] rounded-bl-[30px] mt-15 flex flex-col items-center p-4 sm:p-8">
+          <div className="relative z-20 w-full sm:w-[1280px] h-auto sm:h-[964px]  mt-15 flex flex-col items-center p-4 sm:p-8">
 
             {/* Section Header */}
             <h1 className="text-[24px] font-bold uppercase text-[#FEFEFE] mb-3 text-center">
