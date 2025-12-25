@@ -88,7 +88,7 @@ const ConversationSection = () => {
               Nature of Inquiry
             </label>
             <textarea
-              rows="4"
+              rows={4}
               placeholder="Brief of inquiry"
               className="w-full border border-[#969595]/40 px-4 py-3 outline-none resize-none  bg-[#F1F2F6]"
             />
