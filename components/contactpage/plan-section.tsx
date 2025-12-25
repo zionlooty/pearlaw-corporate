@@ -22,43 +22,43 @@ const PlanSection = () => {
   ]
 
   return (
-    <section className="w-full flex justify-center mt-[60px] pb-[100px] sm:pb-[120px] px-4">
-      <div className="relative w-full max-w-[1440px] min-h-[600px] sm:min-h-[718px] flex flex-col items-center justify-center">
+    <section className="w-full flex justify-center mt-16 px-4 sm:px-6 lg:px-8 pb-12">
+      <div className="relative w-full max-w-[1440px] flex flex-col items-center justify-center">
 
         {/* Background image */}
-        <Image
-          src="/assets/plan.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover"
-        />
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-[#131927]/60 z-10" />
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/plan.jpg"
+            alt="Plan Background"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#131927]/60" />
+        </div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center w-full pt-24 sm:pt-28">
+        <div className="relative z-10 flex flex-col items-center w-full pt-24 sm:pt-28">
 
           <h1 className="text-[14px] sm:text-[16px] font-semibold uppercase text-[#C84E26] mb-2 sm:mb-4 text-center">
-            Flexible plans
+            Flexible Plans
           </h1>
 
-          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] text-white text-center mb-10 sm:mb-14">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] text-white text-center mb-10 sm:mb-14 px-2 sm:px-0">
             Explore Our Retainership Plans
           </h2>
 
           {/* Cards */}
-          <div className="w-full max-w-[1280px] flex flex-col sm:flex-row flex-wrap items-center justify-center p-4 sm:p-10 gap-4 sm:gap-6">
+          <div className="w-full max-w-[1280px] flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 sm:gap-8 px-2 sm:px-0">
 
             {cards.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col gap-4 items-center text-center w-full sm:w-[30%]"
+                className="flex flex-col gap-4 items-center text-center w-full sm:w-[30%] min-h-[220px] sm:min-h-[250px]"
               >
                 {/* Icon */}
-                <div className="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-2xl">
-                  <Icon icon={item.icon} className="text-[#C84E26] w-[28px] h-[28px]" />
+                <div className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] rounded-full bg-white flex items-center justify-center shadow-2xl">
+                  <Icon icon={item.icon} className="text-[#C84E26] w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
                 </div>
 
                 {/* Title */}
@@ -67,7 +67,7 @@ const PlanSection = () => {
                 </h3>
 
                 {/* Text */}
-                <p className="text-white/80 text-[14px] sm:text-[16px] leading-relaxed text-center">
+                <p className="text-white/80 text-[14px] sm:text-[16px] leading-relaxed px-4 sm:px-0">
                   {item.text}
                 </p>
               </div>
