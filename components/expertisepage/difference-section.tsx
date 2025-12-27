@@ -20,7 +20,7 @@ const DifferenceSection = () => {
 
   return (
     <section className="w-full flex justify-center pb-24 sm:pb-32 px-4 mt-[60px]">
-      <div className="relative w-full max-w-[1440px] min-h-[600px] sm:min-h-[718px] flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-[1440px] min-h-[980px] sm:min-h-[718px] flex flex-col items-center justify-center">
 
         {/* Background image */}
         <div className="absolute inset-0">

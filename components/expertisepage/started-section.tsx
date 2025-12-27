@@ -10,9 +10,14 @@ const StartedSection = () => {
                     Ready to get started?
                 </h1>
 
-                <p className="text-[20px] sm:text-[24px] max-w-[900px] font-semibold text-[#FEFEFE] leading-relaxed mb-6">
-                    Whether you’re looking for ongoing legal support <br />through our retainership plans or need a guidance <br /> on a specific matter, we’re here to help.
-                </p>
+                <p className="text-[18px] sm:text-[24px] max-w-[900px] font-semibold text-[#FEFEFE] leading-relaxed mb-6">
+  Whether you’re looking for ongoing legal support
+  <br className="hidden sm:block" />
+  through our retainership plans or need guidance
+  <br className="hidden sm:block" />
+  on a specific matter, we’re here to help.
+</p>
+
 
                 <div className="flex flex-col items-center gap-4 w-full max-w-[660px]">
                     <button className="flex items-center justify-center gap-2 w-full sm:w-[660px] h-[50px] bg-[#C84E26] text-[#F1F2F6] text-[12px] font-semibold uppercase rounded-md">
