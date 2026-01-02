@@ -5,9 +5,9 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCallOutline, IoLogoTiktok } from "react-icons/io5";
 
-const FooterSection = () => {
+const Footer = () => {
   return (
-    <footer className="w-full overflow-x-hidden bg-gradient-to-l from-[#131927] to-[#1E223F] ">
+    <footer className="w-full overflow-x-hidden bg-gradient-to-l from-[#131927] to-[#1E223F] mt-[120px]">
 
       
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-4 gap-16">
@@ -122,4 +122,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;

@@ -1,6 +1,6 @@
 
 import ConsultationSection from '@/components/teampage/consultation-section'
-import FooterSection from '@/components/teampage/footer-section'
+
 import HeroSection from '@/components/teampage/hero-section'
 import LeadSection from '@/components/teampage/lead-section'
 import TeamSection from '@/components/teampage/team-section'
@@ -23,7 +23,7 @@ const Team = () => {
 
     <ConsultationSection/>
 
-    <FooterSection/>
+   
     </>
   )
 }

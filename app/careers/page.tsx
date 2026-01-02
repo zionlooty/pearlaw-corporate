@@ -1,5 +1,4 @@
 import ApplySection from '@/components/careerspage/apply-section'
-import FooterSection from '@/components/careerspage/footer-section'
 import HeroSection from '@/components/careerspage/hero-section'
 import JoinSection from '@/components/careerspage/join-section'
 import QuestionSection from '@/components/careerspage/question-section'
@@ -18,7 +17,7 @@ const Careers = () => {
 
             <StartedSection />
 
-            <FooterSection />
+          
 
 
         </>

@@ -4,7 +4,7 @@ import TrustedSection from '@/components/contactpage/trusted-section'
 import ConversationSection from '@/components/contactpage/conversation-section'
 import DetailsSection from '@/components/contactpage/details-section'
 import PlanSection from '@/components/contactpage/plan-section'
-import FooterSection from '@/components/contactpage/footer-section'
+
 
 
 const ContactPage = () => {
@@ -17,7 +17,7 @@ const ContactPage = () => {
 
   <PlanSection/>
 
-  <FooterSection/>
+ 
  
   </>
   )

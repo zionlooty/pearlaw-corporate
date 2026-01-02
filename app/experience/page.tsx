@@ -1,6 +1,6 @@
 import AboutSection from '@/components/expriencepage/about-section'
 import ClientSection from '@/components/expriencepage/client-section'
-import FooterSection from '@/components/expriencepage/footer-section'
+
 import HeroSection from '@/components/expriencepage/hero-section'
 import SpecializedSection from '@/components/expriencepage/specialized-section'
 import StrategySection from '@/components/expriencepage/strategy-section'
@@ -24,7 +24,7 @@ const Experience = () => {
 
             <StrategySection/>
 
-            <FooterSection/>
+           
 
         </>
     )

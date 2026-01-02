@@ -3,7 +3,6 @@ import ChooseSection from '@/components/homepage/choose-section'
 import ClientSection from '@/components/homepage/client-section'
 import ConversationSection from '@/components/homepage/conversation-section'
 import ExpertiseSection from '@/components/homepage/expertise-section'
-import FooterSection from '@/components/homepage/footer-section'
 import HelpSection from '@/components/homepage/help-section'
 import HeroSection from '@/components/homepage/hero-section'
 import LegalSection from '@/components/homepage/legal-section'
@@ -18,13 +17,13 @@ const Home = () => {
       <PartnerSection />
       <ExpertiseSection />
       <ChooseSection />
-      <ConversationSection/>
-      <LegalSection/>
-      <ServiceSection/>
-      <ClientSection/>
-      <BlogSection/>
-      <HelpSection/>
-      <FooterSection/>
+      <ConversationSection />
+      <LegalSection />
+      <ServiceSection />
+      <ClientSection />
+      <BlogSection />
+      <HelpSection />
+      
     </>
   )
 }
