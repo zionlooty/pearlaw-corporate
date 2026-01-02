@@ -5,8 +5,10 @@ import React from 'react'
 const ChooseSection = () => {
   return (
     <section className="w-full flex justify-center mt-10 sm:mt-14 md:mt-16">
+      <div className="relative w-full max-w-[1440px] 
+  min-h-[650px] sm:min-h-[700px] md:min-h-[750px] 
+  flex justify-center items-start">
 
-      <div className="relative w-full max-w-[1440px] min-h-[900px] sm:min-h-[1000px] md:min-h-[1100px] flex justify-center items-start">
 
 
         <Image
